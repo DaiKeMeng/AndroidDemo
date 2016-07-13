@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:layout_marginTop="200px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="用户名:"/>
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@id/name"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px">
+        <TextView
+            android:id="@+id/password"
+            android:layout_marginTop="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="密   码:"/>
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@id/password"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:text="LOGIN"
+        android:id="@+id/login_btn"/>
+</LinearLayout>

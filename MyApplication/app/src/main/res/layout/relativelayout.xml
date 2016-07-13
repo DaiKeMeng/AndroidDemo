@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--子控件之间的位置比较-->
+    <!--layout_toRightOf:该控件位于给出ID的控件的右侧-->
+    <!--layout_toLeftOf:该控件位于给出ID的控件的左侧-->
+    <!--layout_above:该控件位于给出ID的控件的上侧-->
+    <!--layout_below:该控件位于给出ID的控件的下侧-->
+
+
+    <!--layout_alignTop:与给出的ID的控件的上边界对齐-->
+    <!--layout_alignBottom:与给出的ID的控件的下边界对齐-->
+    <!--layout_alignRight:与给出的ID的控件的右边界对齐-->
+    <!--layout_alignLeft:与给出的ID的控件的左边界对齐-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello world!"
+        android:id="@+id/tv01"
+        android:layout_centerInParent="true"/>
+    <!--tv02在tv01的上边界对齐 左侧-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv02"
+        android:text="hello everyone!"
+        android:layout_toLeftOf="@+id/tv01"
+        android:layout_alignTop="@+id/tv01" />
+    <!--tv03在tv01的左边界对齐 上侧-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv03"
+        android:text="hello tomorrow!"
+        android:layout_above="@id/tv01"
+        android:layout_alignLeft="@id/tv01"/>
+    <!--tv04在tv01的上边界对齐 右侧-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv04"
+        android:text="hello yesterday!"
+        android:layout_toRightOf="@id/tv01"
+        android:layout_alignTop="@id/tv01"/>
+    <!--tv04在tv01的左边界对齐 下侧-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv05"
+        android:text="hello today!"
+        android:layout_below="@id/tv01"
+        android:layout_alignLeft="@id/tv01"/>
+
+</RelativeLayout>
