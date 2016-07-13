@@ -1,1 +1,1 @@
-![image](https://github.com/DaiKeMeng/AndroidDemo/TextViewDemo.jpg)
+![image](https://github.com/DaiKeMeng/AndroidDemo/raw/master/TextViewDemo/TextViewDemo.jpg)
